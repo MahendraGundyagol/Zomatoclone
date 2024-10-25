@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+    position:sticky;
+    top: 0px;
+    z-index: 10;
+    
+
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+
+.navbar .item{
+
+        padding: 10px;
+        list-style: none;
+        display: block;
+        
+        border-radius: 20px;
+        list-style: none;
+    
+}
+
+
+
+    
+   
+   
+
+.item a{
+    text-decoration-line: none;
+    color: white;
+
+    
+    
+}
+.item a:hover{
+color: black;
+background-color: white;
+border-radius:2px;
+}
+
+
+
+
+#logo img{
+    height: 90px;
+    margin: 3px 22px;
+
+}
+/*home secton*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 539px;
+    padding: 3px 200px;
+}
+
+#home::before{
+    content: " ";
+    background: url('img/mainimg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    height: 628px;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+/* utility clasess */
+.h1-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+
+}
+/*services*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    width: 100vw;
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 28px;
+    background-color: rgb(232, 217, 217);
+}
+#services .box img{
+    height: 90px;
+    
+    display: block;
+    margin: auto;
+}
+
+.h2-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*clients section*/
+#clint-section{
+    
+    position: relative;
+    
+
+}
+
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clints img{
+    height: 150px;
+}
+.clint-item{
+    padding: 45px;
+}
+#clint-section::before{
+    content: "";
+    position: absolute;
+    background: url('img/img12.jpg');
+    width: 100%;
+    height: 330px;
+    z-index: -1;
+    opacity: 0.3;
+}
+/*contact forms*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('img/contact.jpg') no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+    
+/*contact section*/
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%S;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+
+
+
